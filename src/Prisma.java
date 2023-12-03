@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Prisma {
     private double height;
     private double baseSide;
@@ -27,13 +29,19 @@ public class Prisma {
     }
 
     public static void main(String[] args) {
-        // Приклад використання класу Prism
-        double prismHeight = 10.0;
-        double prismBaseSide = 5.0;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Введіть висоту призми: ");
+        double prismHeight = scanner.nextDouble();
+
+        System.out.print("Введіть довжину сторони основи призми: ");
+        double prismBaseSide = scanner.nextDouble();
 
         Prisma myPrism = new Prisma(prismHeight, prismBaseSide);
 
-        System.out.println("Lateral Surface Area: " + myPrism.lateralSurfaceArea());
-        System.out.println("Volume: " + myPrism.volume());
+        System.out.println("Площа бічної поверхні: " + myPrism.lateralSurfaceArea());
+        System.out.println("Об'єм: " + myPrism.volume());
+
+        scanner.close();
     }
 }
