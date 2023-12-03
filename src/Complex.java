@@ -41,11 +41,11 @@ public class Complex {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the real and imaginary parts of the first complex number:");
+        System.out.println("Введіть дійсну та уявну частини першого комплексного числа:");
         double real1 = scanner.nextDouble();
         double imaginary1 = scanner.nextDouble();
 
-        System.out.println("Enter the real and imaginary parts of the second complex number:");
+        System.out.println("Введіть дійсну та уявну частини другого комплексного числа:");
         double real2 = scanner.nextDouble();
         double imaginary2 = scanner.nextDouble();
 
@@ -57,13 +57,13 @@ public class Complex {
         Complex product = complex1.multiply(complex2);
         Complex quotient = complex1.divide(complex2);
 
-        System.out.println("Sum: " + sum.real + " + " + sum.imaginary + "i");
-        System.out.println("Difference: " + difference.real + " + " + difference.imaginary + "i");
-        System.out.println("Product: " + product.real + " + " + product.imaginary + "i");
-        System.out.println("Quotient: " + quotient.real + " + " + quotient.imaginary + "i");
+        System.out.println("сума: " + sum.real + " + " + sum.imaginary + "i");
+        System.out.println("Різниця: " + difference.real + " + " + difference.imaginary + "i");
+        System.out.println("Продукт: " + product.real + " + " + product.imaginary + "i");
+        System.out.println("Коефіцієнт: " + quotient.real + " + " + quotient.imaginary + "i");
 
-        System.out.println("Modulus of Complex 1: " + complex1.modulus());
-        System.out.println("Argument of Complex 1: " + complex1.argument() + " radians");
+        System.out.println("Модуль комплексу 1: " + complex1.modulus());
+        System.out.println("Аргумент комплексу 1: " + complex1.argument() + " радіан");
 
         scanner.close();
     }
