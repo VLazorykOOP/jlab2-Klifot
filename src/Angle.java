@@ -50,31 +50,31 @@ public class Angle {
 
     @Override
     public String toString() {
-        return String.format("%.2f degrees", degrees);
+        return String.format("%.2f градусів", degrees);
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the angle in degrees: ");
+        System.out.print("Введіть кут в градусах: ");
         double userAngle = scanner.nextDouble();
 
         Angle angle1 = new Angle(userAngle);
-        System.out.println("Angle 1: " + angle1);
+        System.out.println("Кут 1: " + angle1);
 
-        System.out.print("Enter the amount to increase Angle 1: ");
+        System.out.print("Введіть величину для збільшення Кута 1: ");
         double increaseAmount = scanner.nextDouble();
         angle1.increase(increaseAmount);
-        System.out.println("Increased Angle 1 by " + increaseAmount + " degrees: " + angle1);
+        System.out.println("Збільшено Кут 1 на " + increaseAmount + " градусів: " + angle1);
 
-        System.out.print("Enter the angle in degrees for Angle 2: ");
+        System.out.print("Введіть кут в градусах для Кута 2: ");
         double userAngle2 = scanner.nextDouble();
         Angle angle2 = new Angle(userAngle2);
-        System.out.println("Angle 2: " + angle2);
+        System.out.println("Кут 2: " + angle2);
 
-        System.out.println("Sin of Angle 2: " + angle2.sin());
+        System.out.println("Синус Кута 2: " + angle2.sin());
 
-        System.out.println("Are Angle 1 and Angle 2 equal? " + angle1.equals(angle2));
+        System.out.println("Чи рівні Кут 1 і Кут 2? " + angle1.equals(angle2));
 
         scanner.close();
     }
